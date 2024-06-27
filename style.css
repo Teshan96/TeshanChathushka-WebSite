@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.banner{
+    width: 100%;
+    height: 111vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7));
+    background-position: center;
+    background-size: center;
+}
+.navbar{
+    width: 100%;
+    padding: 40px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nameLogo{
+    width: 300px;
+    margin-left: 0px;
+    margin-top: -15px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+    margin: 1px;
+    border-radius: 25px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 1;
+    padding: 15px;
+    border-radius: 25px;
+}
+li a:hover{
+    background: white;
+    border-radius: 25px;
+    transition: 0.6s;
+}
+.navbar a:hover{
+    color: black;
+    border-radius: 25px;
+}
+.content{
+    width: 100%;
+    color: rgb(255, 255, 255);
+    top: 45%;
+    transform: translateY(-50%);
+    text-align: center;
+    
+}
+.content h1{
+    margin-top: 700px;
+    font-size: 70px;
+    font-weight: 800;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    
+    
+}
+.content h3{
+    font-size: 18px;
+    font-weight: 2;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 8px;
+}
+.logoContent{
+    width: 99%;
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.logo{
+    width: 150px;
+    margin-top: auto;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+button{
+    width: 40px;
+    height: 40px;
+    margin: 20px 5px;
+    border-radius: 30px;
+    color: rgb(255, 255, 255);
+    border: 5px;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+}
+button:hover{
+    background: rgb(0, 192, 226);
+    transition: 0.5s;
+}
+button:hover{
+    color: rgb(255, 255, 255);
+}
+.socialMedia{
+    margin-top: 200px;
+}
+.banner video{
+    position: absolute;
+    transform: translateY(10%);
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+@media(min-aspect-ratio: 16/9){
+    .banner video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media(max-aspect-ratio: 16/9){
+    .banner video{
+        width: auto;
+        height: 100%;
+    }
+}
