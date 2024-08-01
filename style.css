@@ -10,14 +10,14 @@ html{
 }
 #title {
     position: absolute;
-    top: 132%;
+    top: 95%;
     left: 0;
     right: 0;
     color: #fff;
     text-align: center;
     font-family: Lato;
     font-weight: 300;
-    font-size: 30px;
+    font-size: 45px;
     letter-spacing: 1px;
     margin-top: -60px;
     padding-left: 10px;
@@ -591,13 +591,16 @@ html{
     background-position: center;
     background-size: center;
 }
-.navbar{
+.navbar {
     width: 100%;
     padding: 40px;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 
 .nameLogo{
